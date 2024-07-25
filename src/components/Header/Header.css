@@ -1,0 +1,12 @@
+header {
+  border: 1px solid red;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
