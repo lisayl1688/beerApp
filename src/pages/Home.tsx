@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -5,7 +6,9 @@ const Home = () => {
     <>
       <div>
         <img src="/allbeers.jpg" alt="allbeers" />
-        <h2>All Beers</h2>
+        <Link to="/randomproduct">
+          <h2>All Beers</h2>
+        </Link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a,
           eleifend vitae varius venenatis.
