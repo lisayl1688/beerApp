@@ -46,3 +46,11 @@ a {
   height: 1px;
   background-color: black;
 }
+
+.arrow {
+  padding-top: 50px;
+}
+
+.arrow_back {
+  width: 40px;
+}

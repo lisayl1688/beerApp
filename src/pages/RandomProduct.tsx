@@ -1,8 +1,8 @@
-import "./Randomproduct.css";
 import { IBeer } from "../IBeer";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import { Link } from "react-router-dom";
 
 const RandomProduct = () => {
   const [beerDataAll, setBeerDataAll] = useState<IBeer[] | null>(null);
@@ -44,7 +44,14 @@ const RandomProduct = () => {
       <section className="single_beer">
         {randomBeerDetail ? (
           <section className="wrapper_product">
-            <img src={randomBeerDetail.image} alt={randomBeerDetail.name} />
+            <img
+              src={randomBeerDetail.image}
+              alt={randomBeerDetail.name}
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = "/public/Fallback_Beer.svg";
+              }}
+            />
             <h3>{randomBeerDetail.name}</h3>
             <p>{randomBeerDetail.price}</p>
             <div className="reviews">
@@ -55,6 +62,15 @@ const RandomProduct = () => {
         ) : (
           <p>Loading...</p>
         )}
+        <div className="arrow">
+          <Link to="/products">
+            <img
+              className="arrow_back"
+              src="/Arrow_Back.svg"
+              alt="arrow_back"
+            ></img>
+          </Link>
+        </div>
       </section>
       <Footer />
     </>

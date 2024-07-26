@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { IBeer } from "../IBeer";
-import { useParams } from "react-router-dom";
-import "./Detailpage.css";
+import { Link, useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
@@ -41,8 +40,17 @@ const Detailpage = () => {
           <p>Rating: {beerDataDetail?.rating.average.toFixed(2)}</p>
           <p>Reviews: {beerDataDetail?.rating.reviews}</p>
         </div>
-        <Footer />
       </div>
+      <div className="arrow">
+        <Link to="/products">
+          <img
+            className="arrow_back"
+            src="/Arrow_Back.svg"
+            alt="arrow_back"
+          ></img>
+        </Link>
+      </div>
+      <Footer />
     </>
   );
 };

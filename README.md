@@ -1,8 +1,4 @@
-Project Beer
-
 # Beer Explorer
-
-![Screenshot of the application](/Screenshot_Beerapp2.png)
 
 Beer Explorer is a web application that allows users to discover various types of beers, retrieve detailed information, and receive random beer suggestions. The application is developed using React and TypeScript.
 
@@ -51,7 +47,8 @@ Data is fetched from SampleAPIs and stored in the respective components. Error h
 
 ## Screenshot
 
-![Screenshot of the application](/Screenshot_Beerapp1.png)
+![Screenshot of the application](/public/Screenshot_Beerapp2.png)
+![Screenshot of the application](/public/Screenshot_Beerapp1.png)
 
 ## Live Demo
 
