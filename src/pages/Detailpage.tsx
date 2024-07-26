@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import "./Detailpage.css";
 
 const Detailpage = () => {
+  // Speichern der Daten aus API
   const [beerDataDetail, setBeerDataDetail] = useState<IBeer | null>(null);
 
   // Params auslesen aus URL für ID

@@ -1,10 +1,10 @@
+import "./Footer.css";
+
 const Footer = () => {
   return (
-    <>
-      <div>
-        <img src="/bier_icon.svg" alt="beerIcon" />
-      </div>
-    </>
+    <section className="footer">
+      <img src="/bier_icon.svg" alt="beerIcon" />
+    </section>
   );
 };
 

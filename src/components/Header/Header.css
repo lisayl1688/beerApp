@@ -1,12 +1,25 @@
 header {
-  border: 1px solid red;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-color);
 }
 
 nav {
   display: flex;
   gap: 10px;
+}
+
+nav .active {
+  color: #ff5722;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  letter-spacing: 0.05em;
+  transition: letter-spacing 0.5s ease;
 }

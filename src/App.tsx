@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Detailpage from "./pages/Detailpage";
 import RandomProduct from "./pages/RandomProduct";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/randomproduct" element={<RandomProduct />} />
         <Route path="/products/:id" element={<Detailpage />} />
+        <Route path="/randomproduct" element={<RandomProduct />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

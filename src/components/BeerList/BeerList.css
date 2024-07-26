@@ -1,0 +1,11 @@
+.list_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.single_beers {
+  border: 1px solid green;
+  width: 100%;
+}

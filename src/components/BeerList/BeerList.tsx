@@ -22,11 +22,13 @@ const Beerlist = () => {
   console.log(allBeerData);
 
   return (
-    <section className="List">
+    <section className="list_items">
       {allBeerData?.map((einzelnesObject, index) => (
         // beer: name der Prop (Ettikett oder Schlüssel, der sagt, welche Art von Daten weitergegeben wird)
         // einzelnesObject: Wert der Prop, TATSÄCHLICHE DATEN, die weitergegeben werden
-        <BeerItem key={index} beer={einzelnesObject} />
+        <div className="single_beers">
+          <BeerItem key={index} beer={einzelnesObject} />
+        </div>
       ))}
     </section>
   );

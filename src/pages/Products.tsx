@@ -1,11 +1,11 @@
 import Beerlist from "../components/BeerList/BeerList";
+import "./Products.css";
 
 const Products = () => {
   return (
-    <>
-      <h1>Products</h1>
+    <section className="products">
       <Beerlist />
-    </>
+    </section>
   );
 };
 
