@@ -47,8 +47,8 @@ Data is fetched from SampleAPIs and stored in the respective components. Error h
 
 ## Screenshot
 
-![Screenshot of the application](/public/Screenshot_Beerapp2.png)
-![Screenshot of the application](/public/Screenshot_Beerapp1.png)
+<img src="/public/Screenshot_Beerapp2.png" alt="Screenshot of the application" width="300" />
+<img src="/public/Screenshot_Beerapp1.png" alt="Screenshot of the application" width="300" />
 
 ## Live Demo
 
