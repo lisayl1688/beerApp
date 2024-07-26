@@ -19,7 +19,6 @@ const Home = () => {
           <img src="/beers.png" alt="beers" />
           <h2>Random Beer</h2>
         </Link>
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a,
           eleifend vitae varius venenatis.

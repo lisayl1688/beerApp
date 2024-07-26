@@ -3,11 +3,6 @@ import { IBeer } from "../../IBeer";
 import "./BeerList.css";
 import BeerItem from "../BeerItem/BeerItem";
 
-// - Bild
-// - Name
-// - Slogan (tagline)
-// - Produzent (contributed\_by).
-
 const Beerlist = () => {
   // 1. Fetchen
   const [allBeerData, setAllBeerData] = useState<IBeer[] | null>(null);

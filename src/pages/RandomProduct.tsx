@@ -37,14 +37,17 @@ const RandomProduct = () => {
   }, [beerDataAll]);
 
   return (
-    <section className="detail">
-      <h1>Random Product</h1>
+    <section className="single_beer">
       {randomBeerDetail ? (
-        <>
+        <section className="wrapper_product">
           <img src={randomBeerDetail.image} alt={randomBeerDetail.name} />
           <h3>{randomBeerDetail.name}</h3>
           <p>{randomBeerDetail.price}</p>
-        </>
+          <div className="reviews">
+            <p>Rating: {randomBeerDetail.rating.average.toFixed(2)}</p>
+            <p>Reviews: {randomBeerDetail.rating.reviews}</p>
+          </div>
+        </section>
       ) : (
         <p>Loading...</p>
       )}

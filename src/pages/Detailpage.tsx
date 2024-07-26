@@ -22,11 +22,16 @@ const Detailpage = () => {
   return (
     <>
       {" "}
-      <h1>Detailpage</h1>
-      {/* Fragezeichen nicht vergessen! */}
-      <img src={beerDataDetail?.image} alt={beerDataDetail?.name}></img>
-      <h3>{beerDataDetail?.name}</h3>
-      <p>{beerDataDetail?.price}</p>
+      <div className="wrapper_product">
+        {/* Fragezeichen nicht vergessen! */}
+        <img src={beerDataDetail?.image} alt={beerDataDetail?.name}></img>
+        <h3>{beerDataDetail?.name}</h3>
+        <p>{beerDataDetail?.price}</p>
+        <div className="reviews">
+          <p>Rating: {beerDataDetail?.rating.average.toFixed(2)}</p>
+          <p>Reviews: {beerDataDetail?.rating.reviews}</p>
+        </div>
+      </div>
     </>
   );
 };

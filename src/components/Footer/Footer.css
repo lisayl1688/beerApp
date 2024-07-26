@@ -5,6 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+  position: sticky;
+  bottom: 0;
 }
 
 .footer img {
