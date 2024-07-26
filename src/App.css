@@ -39,3 +39,10 @@ a {
   align-items: center;
   padding: 40px 0;
 }
+
+.single_line {
+  margin: 20px auto;
+  width: 90%;
+  height: 1px;
+  background-color: black;
+}

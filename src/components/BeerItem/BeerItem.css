@@ -1,0 +1,15 @@
+.detail_button {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin: 10px 0;
+}
+
+.detail_button:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}

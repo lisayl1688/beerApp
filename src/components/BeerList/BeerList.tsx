@@ -23,6 +23,7 @@ const Beerlist = () => {
         // einzelnesObject: Wert der Prop, TATSÄCHLICHE DATEN, die weitergegeben werden
         <div className="single_beers">
           <BeerItem key={index} beer={einzelnesObject} />
+          <div className="single_line"></div>
         </div>
       ))}
     </section>

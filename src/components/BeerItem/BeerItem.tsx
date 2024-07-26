@@ -19,14 +19,20 @@ const BeerItem: React.FC<IBeerItemProps> = ({ beer }) => {
   return (
     <div className="single_beer">
       <Link to={`/products/${beer.id}`} className="beeritem">
-        <img src={beer.image} alt={beer.name} />
-        <h3>{beer.name}</h3>
+        <img
+          src={beer.image}
+          alt={beer.name}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = "/public/Fallback_Beer.svg";
+          }}
+        />
       </Link>
+      <h3>{beer.name}</h3>
       <p>{beer.price}</p>
-      <div className="reviews">
-        <p>Rating: {beer.rating.average.toFixed(2)}</p>
-        <p>Reviews: {beer.rating.reviews}</p>
-      </div>
+      <Link to={`/products/${beer.id}`} className="beeritem">
+        <button className="detail_button">Details</button>
+      </Link>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import "./Randomproduct.css";
 import { IBeer } from "../IBeer";
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
 const RandomProduct = () => {
   const [beerDataAll, setBeerDataAll] = useState<IBeer[] | null>(null);
@@ -37,21 +39,25 @@ const RandomProduct = () => {
   }, [beerDataAll]);
 
   return (
-    <section className="single_beer">
-      {randomBeerDetail ? (
-        <section className="wrapper_product">
-          <img src={randomBeerDetail.image} alt={randomBeerDetail.name} />
-          <h3>{randomBeerDetail.name}</h3>
-          <p>{randomBeerDetail.price}</p>
-          <div className="reviews">
-            <p>Rating: {randomBeerDetail.rating.average.toFixed(2)}</p>
-            <p>Reviews: {randomBeerDetail.rating.reviews}</p>
-          </div>
-        </section>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </section>
+    <>
+      <Header />
+      <section className="single_beer">
+        {randomBeerDetail ? (
+          <section className="wrapper_product">
+            <img src={randomBeerDetail.image} alt={randomBeerDetail.name} />
+            <h3>{randomBeerDetail.name}</h3>
+            <p>{randomBeerDetail.price}</p>
+            <div className="reviews">
+              <p>Rating: {randomBeerDetail.rating.average.toFixed(2)}</p>
+              <p>Reviews: {randomBeerDetail.rating.reviews}</p>
+            </div>
+          </section>
+        ) : (
+          <p>Loading...</p>
+        )}
+      </section>
+      <Footer />
+    </>
   );
 };
 

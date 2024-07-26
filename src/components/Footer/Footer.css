@@ -1,12 +1,12 @@
 .footer {
   height: 50px;
-  width: 100%;
+  width: 390px;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
-  position: sticky;
+  position: fixed;
   bottom: 0;
 }
 

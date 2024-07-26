@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { IBeer } from "../IBeer";
 import { useParams } from "react-router-dom";
 import "./Detailpage.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const Detailpage = () => {
   // Speichern der Daten aus API
@@ -22,15 +24,24 @@ const Detailpage = () => {
   return (
     <>
       {" "}
+      <Header />
       <div className="wrapper_product">
         {/* Fragezeichen nicht vergessen! */}
-        <img src={beerDataDetail?.image} alt={beerDataDetail?.name}></img>
+        <img
+          src={beerDataDetail?.image}
+          alt={beerDataDetail?.name}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = "/public/Fallback_Beer.svg";
+          }}
+        ></img>
         <h3>{beerDataDetail?.name}</h3>
         <p>{beerDataDetail?.price}</p>
         <div className="reviews">
           <p>Rating: {beerDataDetail?.rating.average.toFixed(2)}</p>
           <p>Reviews: {beerDataDetail?.rating.reviews}</p>
         </div>
+        <Footer />
       </div>
     </>
   );
