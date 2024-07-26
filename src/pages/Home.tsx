@@ -15,7 +15,7 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <Link to="/randomproduct" alt="randombeer">
+        <Link to="/randomproduct">
           <img src="/beers.png" alt="beers" />
           <h2>Random Beer</h2>
         </Link>
