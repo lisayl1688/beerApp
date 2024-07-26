@@ -31,7 +31,7 @@ const Detailpage = () => {
           alt={beerDataDetail?.name}
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = "/public/Fallback_Beer.svg";
+            e.currentTarget.src = "/Fallback_Beer.svg";
           }}
         ></img>
         <h3>{beerDataDetail?.name}</h3>

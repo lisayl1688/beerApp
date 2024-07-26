@@ -24,7 +24,7 @@ const BeerItem: React.FC<IBeerItemProps> = ({ beer }) => {
           alt={beer.name}
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = "/public/Fallback_Beer.svg";
+            e.currentTarget.src = "/Fallback_Beer.svg";
           }}
         />
       </Link>
