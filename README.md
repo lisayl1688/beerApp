@@ -47,8 +47,10 @@ Data is fetched from SampleAPIs and stored in the respective components. Error h
 
 ## Screenshot
 
-<img src="/public/Screenshot_Beerapp2.png" alt="Screenshot of the application" width="300" />
-<img src="/public/Screenshot_Beerapp1.png" alt="Screenshot of the application" width="300" />
+<div style="display: flex; gap: 10px;">
+  <img src="/public/Screenshot_Beerapp2.png" alt="Screenshot of the application" width="300" />
+  <img src="/public/Screenshot_Beerapp1.png" alt="Screenshot of the application" width="300" />
+</div>
 
 ## Live Demo
 
